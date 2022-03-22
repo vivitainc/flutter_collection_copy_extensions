@@ -39,15 +39,3 @@ extension ListCopyWithApplyElement<T> on List<T> {
     return copied;
   }
 }
-
-extension ListIterableFlatten<T> on Iterable<List<T>> {
-  /// SetのListを1つのSetにまとめる.
-  List<T> flatten() {
-    final result = <T>[];
-    // ignore: prefer_foreach
-    for (final list in this) {
-      result.addAll(list);
-    }
-    return result;
-  }
-}

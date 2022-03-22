@@ -1,22 +1,21 @@
-stdlib_plus
+
 
 ## Features
 
-Flutterの標準ライブラリおよびデファクトスタンダードライブラリ用の拡張関数や
-よく使用する処理を提供する.
+List/Map/SetのCopy操作Extensionを提供する.
 
-## Getting started
-
-TODO.
-
-```yaml
-# pubspec.yaml
-```
+これらのExtensionはRedux Architectureで頻発する処理を書きやすくするために使用できる.
 
 ## Usage
 
-TODO.
-
 ```dart
+
+final map = <String, String>{
+    'Key1': 'Value1',
+    'Key2': 'Value2',
+};
+
+final value2Copy = map.copyWhere((entry) => entry.value == 'Value2');
+final removedKey1Copy = map.copyWhere((entry) => entry.key != 'Key1');
+
 ```
-## Additional information
