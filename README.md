@@ -1,4 +1,4 @@
-
+[![Github Actions](https://github.com/vivitainc/flutter_collection_copy_extensions/actions/workflows/flutter-package-test.yaml/badge.svg)](https://github.com/vivitainc/flutter_collection_copy_extensions/actions/workflows/flutter-package-test.yaml)
 
 ## Features
 
